@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+ <link rel="stylesheet" href="../FontAwesome/css/all.css">
+ <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+
+ </head>
+ <body class="container-fluid">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <button data-bs-target="#navitems" data-bs-toggle="collapse" type="button" class="navbar-toggler"><span class="data-toggler-icon"></span></button>
+   <a href="#" class="navbar-brand"><span class="bi bi-cart4"></span>Amazon</a>
+
+   <div id="navitems" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#loginModal" data-bs-toggle="modal">login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#registerModal" data-bs-toggle="modal">register</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact" data-bs-toggle="modal">contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="modal Show fade" id="loginModal">
+    
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1>user login</h1>
+        </div>
+        <div class="modal-body">
+            <ul class="form-group">
+                <label>username</label>
+                <input type="text" class="form-control">
+                <label>password</label>
+                <input type="password" class="form-control">
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button class="close" type="button" data-bs-dismiss="modal" class="close">x</button>
+            <button class="btn btn-success">login</button>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="modal Show fade" id="registerModal">
+    
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1>user login</h1>
+        </div>
+        <div class="modal-body">
+            <ul class="form-group">
+                <label>username</label>
+                <input type="text" class="form-control">
+                <label>password</label>
+                <input type="password" class="form-control">
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <button class="close" type="button" data-bs-dismiss="modal" class="close">x</button>
+            <button class="btn btn-success">login</button>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="modal fade Show" id="contact">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>subscribe</h1>
+                <button data-bs-dismiss="modal" class="close">x</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-inline">
+
+                    <input type="email" placeholder="enter email" class="form-control">
+                    <div class="btn-group">
+                        <button class="btn btn-success">Subscribe</button>
+                        <button type="button" data-bs-target="#contact" data-bs-toggle="modal" class="btn btn-danger">close</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+ 
+
+ 
+ <script src="../node_modules/jquery/dist/jquery.js"></script>
+ <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+ </body>
+</html>
